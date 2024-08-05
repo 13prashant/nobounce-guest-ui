@@ -22,6 +22,7 @@ export default function Header() {
         <nav className="hidden sm:flex gap-4">
           {navLinks.map((link) => (
             <Link
+              key={link.name}
               className="hover:text-secondary duration-300"
               href={link.href}
             >
