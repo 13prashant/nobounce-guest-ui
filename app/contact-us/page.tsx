@@ -14,7 +14,7 @@ export default function ContactUs() {
   return (
     <main>
       <section className="container">
-        <div className="flex flex-col md:flex-row justify-between items-center gap-10 duration-300">
+        <div className="flex flex-col-reverse md:flex-row justify-between items-center gap-10 duration-300">
           <div className="max-w-2xl flex flex-col gap-10">
             <div className="text-center md:text-left duration-300">
               <h1 className="text-3xl md:text-7xl font-semibold mb-3 tracking-wide duration-300">
@@ -44,10 +44,10 @@ export default function ContactUs() {
                 </div>
               </div>
 
-              <h5 className="text-xl mb-2">
+              <h5 className="text-sm md:text-xl mb-2 duration-300 font-semibold">
                 Stay up to date with our social handles
               </h5>
-              <div className="flex gap-4">
+              <div className="flex gap-4 justify-center md:justify-start duration-300">
                 <Link
                   href={FACEBOOK_LINK}
                   className="hover:scale-105 duration-300"
@@ -84,7 +84,7 @@ export default function ContactUs() {
               </div>
             </div>
           </div>
-          <div>
+          <div className="mb-10 md:mb-0 duration-300">
             <Image
               src="/svg/contact-us.svg"
               width={500}
