@@ -1,11 +1,4 @@
-import {
-  BookText,
-  CircleCheckBig,
-  CircleSlash,
-  MessageCircleHeart,
-  Proportions,
-  ShieldCheck,
-} from "lucide-react";
+import { CircleCheckBig, Proportions, ShieldCheck } from "lucide-react";
 
 export const whatWeDo = [
   {
@@ -73,27 +66,53 @@ export const whyChooseUs = [
   },
 ];
 
-export const aboutUs = {
-  ourStory: {
-    title: "Our Story",
+export const pricingPlans = [
+  {
+    id: 0,
+    name: "Free",
+    price: "$0",
     description:
-      "Nobounce Mail was born out of a simple idea: to create a reliable solution for businesses struggling with invalid email addresses and high bounce rates. With our years of experience in the digital marketing industry, we recognized the need for an accurate and efficient email verification tool. Today, we serve clients across various industries, helping them achieve better results with their email marketing campaigns.",
-    icon: <BookText />,
+      "Ideal for individuals or small businesses testing our service. Validate up to 100 emails per month with standard accuracy.",
+    features: [
+      "Basic email validation",
+      "Limited to 100 email verifications per month",
+      "Standard accuracy",
+      "Basic reports",
+      "Email support",
+    ],
   },
-  ourVision: {
-    title: "Our Vision",
+  {
+    id: 1,
+    name: "Basic",
+    price: "$29",
     description:
-      "Our vision is to become the top email verification service provider, known for our accuracy, efficiency, and exceptional customer support. Our aim is to help businesses of all sizes enhance their email marketing strategies and achieve their goals.",
-    icon: <CircleSlash />,
+      "Perfect for growing businesses. Validate up to 10,000 emails per month with high accuracy and priority support.",
+    features: [
+      "Advanced email validation",
+      "Up to 10,000 email verifications per month",
+      "High accuracy",
+      "Detailed reports",
+      "Priority email support",
+      "Bulk verification",
+    ],
   },
-  ourValues: {
-    title: "Our Values",
-    description: {
-      Accuracy:
-        "We are committed to providing the most precise email validation services, ensuring our client's email lists are clean and up-to-date.",
-      "Customer Satisfaction":
-        "Our clients and their needs are at the heart of everything we do. We ourselves on offering outstanding support and building long-term relationships.",
-    },
-    icon: <MessageCircleHeart />,
+  {
+    id: 2,
+    name: "Pro",
+    price: "$99",
+    description:
+      "Best for large enterprises with extensive email marketing needs. Validate up to 100,000 emails per month with unmatched accuracy and comprehensive support.",
+    features: [
+      "Comprehensive email validation",
+      "Up to 100,000 email verifications per month",
+      "Unmatched accuracy",
+      "Comprehensive reports",
+      "Priority email and phone support",
+      "Bulk verification",
+      "API access",
+      "Dedicated account manager",
+    ],
   },
-};
+];
+
+export default pricingPlans;

@@ -1,5 +1,5 @@
 import AboutUsSection from "@/components/about-us/AboutUsSection";
-import { aboutUs } from "@/components/home/helpers";
+import { aboutUs } from "@/components/about-us/helpers";
 
 export default function AboutUs() {
   const { ourStory, ourVision, ourValues } = aboutUs;
