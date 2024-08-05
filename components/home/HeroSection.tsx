@@ -1,5 +1,7 @@
+import { MoveRight } from "lucide-react";
 import { AuroraBackground } from "../common/AuroraBackground";
 import { Button } from "../ui/button";
+import WobbleCard from "../common/WobbleCard";
 
 export default function HeroSection() {
   return (
@@ -18,20 +20,22 @@ export default function HeroSection() {
               and wasted marketing efforts are kicked out of the door!
             </span>
           </h1>
-          <div className="bg-accent p-10 rounded-md mt-5 text-left flex flex-col gap-4 bg-gradient-to-r from-accent to-primary w-full">
-            <p className="font-bold text-lg">
-              Nobounce email validation service
-            </p>
-            <p className="text-accent-foreground">
-              is set out to transform your email campaigns by ensuring you only
-              send emails to valid, active addresses. <br /> Ready to say
-              goodbye to invalid emails and hello to higher engagement and
-              conversion rates? <br /> You are in the right place.
-            </p>
-            <Button size="lg" className="w-full md:w-fit duration-300">
-              Get started
-            </Button>
-          </div>
+          <WobbleCard containerClassName="mt-5 bg-gradient-to-r from-accent to-primary">
+            <div className="text-left flex flex-col gap-4 p-10">
+              <p className="font-bold text-lg">
+                Nobounce email validation service
+              </p>
+              <p className="text-accent-foreground">
+                is set out to transform your email campaigns by ensuring you
+                only send emails to valid, active addresses. <br /> Ready to say
+                goodbye to invalid emails and hello to higher engagement and
+                conversion rates? <br /> You are in the right place.
+              </p>
+              <Button size="lg" className="w-full md:w-fit duration-300 z-50">
+                Get started <MoveRight className="ml-2" />
+              </Button>
+            </div>
+          </WobbleCard>
         </div>
       </div>
     </AuroraBackground>
