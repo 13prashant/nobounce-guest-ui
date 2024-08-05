@@ -5,7 +5,7 @@ import { cn } from "@/lib/utils";
 
 export default function PricingPlans() {
   return (
-    <section className="container">
+    <section className="container" id="pricing">
       <h1 className="text-3xl font-semibold mb-16 text-center">
         Pricing Plans
       </h1>
