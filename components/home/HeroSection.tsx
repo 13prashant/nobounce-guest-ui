@@ -1,8 +1,9 @@
+import { AuroraBackground } from "../common/AuroraBackground";
 import { Button } from "../ui/button";
 
 export default function HeroSection() {
   return (
-    <section className="w-full dark:bg-black bg-white  dark:bg-dot-white/[0.2] bg-dot-black/[0.2] relative flex items-center justify-center">
+    <AuroraBackground>
       <div className="container">
         <div className="flex flex-col gap-4 justify-center items-center text-center max-w-5xl mx-auto">
           <p className="border py-1 pl-3 pr rounded-2xl">
@@ -33,6 +34,6 @@ export default function HeroSection() {
           </div>
         </div>
       </div>
-    </section>
+    </AuroraBackground>
   );
 }
