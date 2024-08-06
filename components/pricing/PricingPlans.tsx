@@ -1,14 +1,11 @@
 import { Check, MoveRight } from "lucide-react";
 import { Button } from "../ui/button";
-import pricingPlans from "./helpers";
 import { cn } from "@/lib/utils";
+import { pricingPlans } from "./helpers";
 
 export default function PricingPlans() {
   return (
     <section className="container" id="pricing">
-      <h1 className="text-3xl font-semibold mb-16 text-center">
-        Pricing Plans
-      </h1>
       <div className="flex justify-around flex-wrap gap-10">
         {pricingPlans.map((plan) => (
           <div

@@ -18,18 +18,20 @@ export default function Header() {
   return (
     <header className="border-b py-4 sticky top-0 z-50 backdrop-filter backdrop:blur-lg bg-background/90">
       <div className="container py-0 flex justify-between items-center">
-        <Logo />
-        <nav className="hidden sm:flex gap-4">
-          {navLinks.map((link) => (
-            <Link
-              key={link.name}
-              className="hover:text-secondary duration-300"
-              href={link.href}
-            >
-              {link.name}
-            </Link>
-          ))}
-        </nav>
+        <div className="flex items-center gap-20">
+          <Logo />
+          <nav className="hidden sm:flex gap-4">
+            {navLinks.map((link) => (
+              <Link
+                key={link.name}
+                className="hover:text-secondary duration-300"
+                href={link.href}
+              >
+                {link.name}
+              </Link>
+            ))}
+          </nav>
+        </div>
         {showMobileNav && (
           <MobileNav
             showMobileNav={showMobileNav}

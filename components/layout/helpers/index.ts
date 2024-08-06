@@ -2,7 +2,7 @@ export const navLinks = [
   {
     id: 0,
     name: "Pricing",
-    href: "/#pricing",
+    href: "/pricing",
   },
   {
     id: 1,
